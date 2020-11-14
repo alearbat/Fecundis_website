@@ -133,11 +133,11 @@ form {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 12px;
     display: block;
-    padding-top: 10px; }
+    padding-top: 10px;
+    color: #ffffff; }
   form div textarea {
     height: 200px; }
 
-/* from here I still have to change to sass */
 .field {
   background-color: #f5f5f5;
   border-radius: 8px;
@@ -157,20 +157,20 @@ form {
   width: 300px;
   margin-top: 4px; }
 
-@media (min-width: 768px) {
-  .field, .button {
-    width: 400px; } }
-
 input.button:hover {
   background-color: #4A72B0; }
 
 input::placeholder {
   font-family: 'Merriweather Sans', sans-serif;
-  color: grey; }
+  color: lightgrey; }
 
 textarea::placeholder {
   font-family: 'Merriweather Sans', sans-serif;
-  color: grey; }
+  color: lightgrey; }
+
+@media (min-width: 768px) {
+  .field, .button {
+    width: 400px; } }
 
 /* general*/
 body {

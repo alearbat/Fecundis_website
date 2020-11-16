@@ -1,21 +1,25 @@
 
 .navbar {
   border-bottom: $border;
-    ul {
-      li {
-        font: $title-font;
-        font-size: 18px;
-        margin-right: 12px;
-      }
-      li:hover {
-        font-weight: bold;
-      }
+  ul {
+    li {
+      font: $title-font;
+      font-size: 18px;
+      margin-right: 12px;
     }
-    .navbar__brand {
-      img {
-        width: 250px;
-      }
+    li:hover {
+      font-weight: bold;
     }
+  }
+  .navbar__brand {
+    img {
+      width: 250px;
+    }
+  }
+  .navbar__selection {
+    border-bottom: solid 2px $sec-color;
+    color: $sec-color !important;
+  }
 }
 
 @media (min-width: 768px){
@@ -47,18 +51,15 @@ footer {
   .footer__sn--backg{
     background-color: $sec-color
   }
-  .copyright {
+  .footer__copyright {
     font-size: 11px;
+    margin: 0;
+    padding: 10px;
   }
 }
 
-.navbar__selection {
-  border-bottom: solid 2px $sec-color;
-  color: $sec-color !important;
-}
-
 .section__title--center {
-  padding:30px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -67,7 +68,8 @@ footer {
 $carouselItems:(
   content1: url("../images/pregnant.jpg"),
   content2: url("../images/microscope.jpg"),
-  content3: url("../images/beautiful-young.jpg")
+  content3: url("../images/beautiful-young.jpg"),
+  content4: url("../images/pinkSperm.jpg")
 );
 
 @each $content, $backg in $carouselItems {
@@ -100,6 +102,7 @@ $carouselItems:(
   color: $font-lightcolor;
   padding: 1.5em 3em;
   margin: 0;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px){
@@ -117,7 +120,7 @@ $carouselItems:(
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  margin:1em 1em;
+  margin:0.5em 1em 2em 1em;
   padding:5em 0.5em;
 	color: $font-lightcolor;
 	font-size: 1.2rem;
@@ -131,6 +134,12 @@ $carouselItems:(
   background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   h1, p {
     color: $font-lightcolor;
+  }
+}
+
+@media (min-width: 768px){
+  .section__backg--gradient {
+    height: 80vh;
   }
 }
 
@@ -148,6 +157,10 @@ $carouselItems:(
   .members--circle:hover {
     transform: scale(1.2,1.2);
   }
+  .member__name {
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 768px){
@@ -156,17 +169,21 @@ $carouselItems:(
   }
 }
 
-/*contact*/
+/*CONTACT*/
+
+.contact__backg {
+  background-image: url("../images/microscope.jpg");
+}
 
 form {
   margin-bottom: 20px;
   div {
     label {
       font-family: 'Merriweather Sans', sans-serif;
-      font-size: 12px;
+      font-size: 14px;
       display: block;
       padding-top: 10px;
-      color: $font-lightcolor;
+      color: $font-color;
     }  
     textarea {
       height: 200px;
@@ -176,6 +193,7 @@ form {
 
 .field {
   background-color: #f5f5f5;
+  opacity: .8;
   border-radius: 8px;
   border: none;
   padding: 8px;
@@ -208,6 +226,7 @@ textarea::placeholder {
   font-family: 'Merriweather Sans', sans-serif;
   color: lightgrey;
 }
+
 @media (min-width: 768px) {
   .field, .button {
     width: 400px;

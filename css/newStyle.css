@@ -3,7 +3,7 @@ h1, h2 {
   color: #2b2b2b; }
 
 p {
-  font: 1.4rem "Merriweather Sans", sans-serif; }
+  font: 1.3rem "Merriweather Sans", sans-serif; }
 
 .navbar {
   border-bottom: solid 2px #f1f1f1; }
@@ -86,8 +86,7 @@ footer {
   background-color: #4A72B0;
   color: #ffffff;
   padding: 1.5em 3em;
-  margin: 0;
-  line-height: 1.5; }
+  font: 1.3rem "Merriweather Sans", sans-serif; }
 
 @media (max-width: 768px) {
   .section__paragraph--divider {
@@ -120,7 +119,7 @@ footer {
 
 @media (min-width: 768px) {
   .section__backg--gradient {
-    height: 80vh; } }
+    height: 90vh; } }
 
 .members .members--circle {
   margin: 60px 30px;

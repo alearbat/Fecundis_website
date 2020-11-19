@@ -102,12 +102,12 @@ $carouselItems:(
   color: $font-lightcolor;
   padding: 1.5em 3em;
   font: $subtitle-font;
+  
 }
 
 @media (max-width: 768px){
   .section__paragraph--divider {
     font-size: 15px !important;
-    text-align: center;
   }
 }
 

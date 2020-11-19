@@ -90,8 +90,7 @@ footer {
 
 @media (max-width: 768px) {
   .section__paragraph--divider {
-    font-size: 15px !important;
-    text-align: center; } }
+    font-size: 15px !important; } }
 
 .section__item--circle {
   width: 16rem !important;

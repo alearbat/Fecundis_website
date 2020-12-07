@@ -144,10 +144,10 @@ $carouselItems:(
 
 .background__item--content5 {
   @extend .section__title--center;
-  background-image: url(../images/scientists.jpg);
   color: $sec-color;
   font: $subtitle-font;
   min-height: 400px;
+  position: relative;
   h2 {
     color: $sec-color;
   }
@@ -157,6 +157,18 @@ $carouselItems:(
   a:hover {
     transform: scale(1.2, 1.2);
   }
+}
+
+.background__item--content5::after {
+  content: "";
+  background: url(../images/scientists.jpg);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .section__link {

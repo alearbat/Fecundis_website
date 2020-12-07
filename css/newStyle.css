@@ -116,16 +116,27 @@ footer {
     transform: scale(1.2, 1.2); }
 
 .background__item--content5 {
-  background-image: url(../images/scientists.jpg);
   color: #0D1B41;
   font: 1.3rem "Merriweather Sans", sans-serif;
-  min-height: 400px; }
+  min-height: 400px;
+  position: relative; }
   .background__item--content5 h2 {
     color: #0D1B41; }
   .background__item--content5 a {
     color: #0D1B41; }
   .background__item--content5 a:hover {
     transform: scale(1.2, 1.2); }
+
+.background__item--content5::after {
+  content: "";
+  background: url(../images/scientists.jpg);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .section__link {
   text-decoration: underline;

@@ -1,3 +1,6 @@
 # Fecundis_website
-This is my first real website. Fecundis is a Biotech Startup. 
-It'll be available at www.fecundis.com.
+Fecundis is a Biotech Startup. 
+
+<p>
+  <img src="./ScreenShot_fecundis1.png" width="600" title="screenshot">
+</p>
